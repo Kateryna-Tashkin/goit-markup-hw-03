@@ -19,6 +19,7 @@
   --bg-primary: #e5e5e5;
   --bg-secondary: #f5f4fa;
   --bg-box: #ffffff;
+  --border-bottom: #ececec;
 }
 
 html {
@@ -43,7 +44,7 @@ html {
 .page-header {
   text-decoration-color: none;
   background: var(--bg-header);
-  border: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-bottom);
 
   margin: 0px;
   padding: 0px;
@@ -233,11 +234,15 @@ html {
   text-align: center;
 
   margin-bottom: 50px;
+  margin-top: 0px;
   padding: 0px;
 }
 
 .images-work {
   display: flex;
+}
+.secondary-margine {
+  margin-top: 0px;
 }
 .list-box-secondary + .list-box-secondary {
   margin: 0px 0px 0px 30px;
@@ -287,6 +292,9 @@ html {
 }
 .page-footer {
   background: var(--bg-hero-footer);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   color: var(--secondary-accent-color);
@@ -427,8 +435,7 @@ html {
   line-height: 2;
   letter-spacing: 0.06em;
 
-  margin: 20px 24px 4px 24px;
-  padding: 0px;
+  margin: 0px;
 }
 .section-text-type {
   color: var(--secondary-text-color);
@@ -437,6 +444,11 @@ html {
   font-size: 16px;
   line-height: 1.89;
 
-  margin: 4px 24px 20px 24px;
-  padding: 0px;
+  margin-top: 4px;
+}
+.portfolio-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
